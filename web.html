@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="style/reset200802.css">
+    <title>Document</title>
+    <style>
+        .header {
+            height: 70px;
+            width: 100%;
+            background: url('img/line.jpg') repeat-x;
+        }
+
+        .headerContent {
+            width: 990px;
+            height: 70px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .logo {
+            float: left;
+            width: 147px;
+            height: 60px;
+            background: url(img/sprint.png) no-repeat 7px 14px;
+            overflow: hidden;
+            margin: 3px 0px 0px 0px;
+        }
+
+        .logo a {
+            width: 147px;
+            height: 60px;
+            display: inline-block;
+            text-indent: -999999px;
+
+        }
+
+        .menu {
+            float: left;
+        }
+
+        .menuOne {
+            float: left;
+        }
+
+        .menu ul li {
+            height: 70px;
+            line-height: 70px;
+            color: #fff;
+            padding: 0px 15px;
+            float: left;
+        }
+
+        .menuOne ul li {
+            width: 482px;
+            height: 150px;
+            float: left;
+            overflow: hidden;
+            padding: 0px 15px;
+        }
+
+        .menuOne ul li .liBox {
+            width: 82px;
+            height: 82px;
+            float: left;
+            background: url(img/tu5.png) no-repeat;
+            margin: 37px 0px;
+        }
+
+        .liBox-one {
+            width: 366px;
+            height: 146px;
+            float: left;
+            overflow: hidden;
+            margin: 0px 1px;
+        }
+
+        .liBoxOne-one {
+            width: 366px;
+            height: 146px;
+            float: left;
+            overflow: hidden;
+            margin: 0px 1px;
+        }
+
+        .liBoxTwo-one {
+            width: 366px;
+            height: 146;
+            float: left;
+            overflow: hidden;
+            margin: 7px 1px;
+        }
+
+        .liBoxFax-one {
+            width: 366px;
+            height: 146;
+            float: left;
+            overflow: hidden;
+            margin: 21px 1px;
+        }
+
+        .menuOne ul li .liBoxOne {
+            width: 82px;
+            height: 82px;
+            float: left;
+            background: url(img/tu5.png) no-repeat -125px 0px;
+            margin: 37px 0px;
+        }
+
+        .menuOne ul li .liBoxTwo {
+            width: 82px;
+            height: 82px;
+            float: left;
+            background: url(img/tu5.png) no-repeat -245px 0px;
+            margin: 37px 0px;
+        }
+
+        .menuOne ul li .liBoxFax {
+            width: 82px;
+            height: 82px;
+            float: left;
+            background: url(img/tu5.png) no-repeat -378px 0px;
+            margin: 37px 0px;
+        }
+
+        .liBox a {
+            width: 78px;
+            height: 78px;
+            display: inline-block;
+        }
+
+        .liBoxOne a {
+            width: 78px;
+            height: 78px;
+            display: inline-block;
+        }
+
+        .liBoxTwo a {
+            width: 78px;
+            height: 78px;
+            display: inline-block;
+        }
+
+        .liBoxFax a {
+            width: 78px;
+            height: 78px;
+            display: inline-block;
+        }
+
+        .word13-one {
+            width: 107px;
+            height: 39px;
+            background: url('img/tu6.png') no-repeat;
+            margin: 25px 1px;
+        }
+
+        .word13-one a {
+            width: 107px;
+            height: 39px;
+            display: inline-block;
+        }
+
+        .BoxOne-one {
+            width: 221px;
+            height: 193px;
+            float: left;
+            overflow: hidden;
+            margin: 0px 0px;
+        }
+
+        .BoxTwo-one {
+            width: 230px;
+            height: 185px;
+            float: left;
+            overflow: hidden;
+            margin: 1px -5px;
+        }
+
+        .BoxFox-one {
+            width: 230px;
+            height: 185px;
+            float: left;
+            overflow: hidden;
+            margin: 1px -5px;
+        }
+
+        .word1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 16px 60px;
+        }
+
+        .word2 {
+            font-size: 12px;
+            line-height: 20px;
+            margin: -8px 27px;
+        }
+
+        .word3 {
+            font-size: 12px;
+            font-weight: bold;
+            margin: 13px 26px;
+        }
+
+        .word4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 14px 57px;
+        }
+
+        .word5 {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 20px 13px;
+        }
+
+        .word6 {
+            font-size: 20px;
+            font-weight: bold;
+            overflow: hidden;
+            margin: 15px 60px;
+        }
+
+        .word7 {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 3px 24px;
+        }
+
+        .word8 {
+            font-size: 16px;
+            margin: 2px 23px;
+        }
+
+        .word9 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 2px 36px;
+        }
+
+        .word10 {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 11px 22px;
+        }
+
+        .word11 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 10px 30px;
+        }
+
+        .word12 {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 19px 11px;
+        }
+
+        .word13 {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 0px 10px;
+        }
+
+        .word14 {
+            font-size: 16px;
+            line-height: 20px;
+            color: #73b7ee;
+            margin: 6px 0px;
+        }
+
+        .word15 {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 13px 0px;
+        }
+
+        .word16 {
+            font-size: 12px;
+            color: #969696;
+            margin: 20px 0px;
+        }
+
+        .word17 {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 20px;
+            margin: 3px 16px;
+        }
+
+        .word18 {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 9px 5px;
+        }
+
+        .word19 {
+            font-size: 12px;
+            color: #969696;
+            margin: 10px 7px;
+        }
+
+        .word20 {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 20px;
+            margin: 10px 1px;
+        }
+
+        .word21 {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 11px 6px;
+        }
+
+        .word22 {
+            font-size: 12px;
+            color: #969696;
+            margin: 20px 10px;
+        }
+
+        .word23 {
+            font-size: 31px;
+            font-weight: bold;
+            margin: 28px 273px;
+        }
+
+        .word24 {
+            font-size: 12px;
+            color: #969696;
+            margin: -15px 300px;
+        }
+
+        .word25 {
+            font-size: 31px;
+            font-weight: bold;
+            color: #fff;
+            margin: 30px 13px;
+        }
+
+        .word26 {
+            font-size: 12px;
+            line-height: 16px;
+            color: #d3d3d2;
+            margin: -13px 14px;
+        }
+
+        .word27 {
+            font-size: 12px;
+            line-height: 16px;
+            color: #d3d3d2;
+            margin: 33px 14px;
+        }
+
+        .word28 {
+            font-size: 26px;
+            font-weight: bold;
+            color: #958f8c;
+            margin: 4px 13px;
+        }
+
+        .word29 {
+            font-size: 13px;
+            color: #d3d3d2;
+            margin: 9px 17px;
+        }
+
+        .word30 {
+            font-size: 12px;
+            color: #fff;
+            margin: 11px 17px;
+        }
+
+        .word31 {
+            font-size: 12px;
+            color: #59969b;
+            margin: 10px 15px;
+        }
+
+        .word32 {
+            font-size: 31px;
+            font-weight: bold;
+            color: #fff;
+            margin: 34px 43px;
+        }
+
+        .word33 {
+            font-size: 13px;
+            color: #fff;
+            margin: -4px 16px;
+        }
+
+        .word34 {
+            font-size: 13px;
+            color: #59969b;
+            margin: 30px 15px;
+        }
+
+        .word35 {
+            font-size: 13px;
+            color: #fff;
+            margin: -6px 15px;
+        }
+
+        .word36 {
+            font-size: 13px;
+            color: #fff;
+            margin: 29px 16px;
+        }
+
+        .word37 {
+            font-size: 13px;
+            color: #fff;
+            margin: -5px 16px;
+        }
+
+        .word38 {
+            font-size: 31px;
+            font-weight: bold;
+            color: #fff;
+            margin: 33px 19px;
+        }
+
+        .word39 {
+            font-size: 13px;
+            line-height: 20px;
+            color: #fff;
+            margin: -4px 14px;
+        }
+
+        .word40 {
+            font-size: 13px;
+            line-height: 20px;
+            color: #fff;
+            margin: 24px 16px;
+        }
+
+        .word41 {
+            font-size: 13px;
+            line-height: 20px;
+            color: #fff;
+            margin: -11px 16px;
+        }
+
+        .word42 {
+            font-size: 31px;
+            font-weight: bold;
+            color: #fff;
+            margin: 32px 39px;
+        }
+
+        .word43 {
+            font-size: 13px;
+            color: #fff;
+            margin: 0px 12px;
+        }
+
+        .word44 {
+            font-size: 13px;
+            line-height: 20px;
+            color: #9fc962;
+            margin: 8px 5px;
+        }
+
+        .Icon-one {
+            width: 154px;
+            height: 54px;
+            background: url(img/tu7.png) no-repeat -11px -96px;
+        }
+
+        .Icon-two {
+            width: 154px;
+            height: 54px;
+            background: url(img/tu7.png) no-repeat -190px -96px;
+        }
+
+        .Icon-three {
+            width: 154px;
+            height: 54px;
+            background: url(img/tu7.png) no-repeat -350px -96px;
+        }
+
+        .Icon-four {
+            width: 154px;
+            height: 54px;
+            background: url(img/tu7.png) no-repeat -191px -252px;
+        }
+
+        .Icon-five {
+            width: 154px;
+            height: 54px;
+            background: url(img/tu7.png) no-repeat -11px -252px;
+        }
+
+        .Icon-six {
+            width: 154px;
+            height: 54px;
+            background: url(img/tu7.png) no-repeat -13px -338px;
+        }
+
+        .footer {
+            width: 171px;
+            height: 30px;
+            float: left;
+            overflow: hidden;
+            background: url('img/sprint.png') no-repeat -171px 0px;
+            margin: 23px 0px 0px 41px;
+        }
+
+        .footer .logofooter {
+            width: 33px;
+            height: 25px;
+            background: url('img/sprint.png') no-repeat -136px -18px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .footer .logofooter1 {
+            width: 33px;
+            height: 25px;
+            background: url('img/sprint.png') no-repeat -145px 5px;
+            overflow: hidden;
+            float: right;
+        }
+
+        .headerTwo {
+            width: 100%;
+            height: 552px;
+            background: url('img/tu2.jpg') no-repeat;
+        }
+
+        .headerTwoContent {
+            width: 990px;
+            height: 560px;
+            margin: auto;
+            background: url('img/sprint2.png') no-repeat right center;
+            overflow: hidden;
+        }
+
+        .headerTwoContent .tubiao {
+            width: 420px;
+            height: 175px;
+            margin: auto;
+            margin-top: 240px;
+            float: left;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .word {
+            color: #fff;
+            text-align: center;
+            line-height: 22px;
+            font-size: 14px;
+            padding-top: 15px;
+        }
+
+        .wordOne {
+            text-align: center;
+            line-height: 22px;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+
+        .wordTwo {
+            text-align: center;
+            line-height: 22px;
+            font-size: 12px;
+            padding-top: 10px;
+        }
+
+        .tubiao .tubiaoA {
+            width: 203px;
+            height: 49px;
+            float: left;
+            overflow: hidden;
+            background: url('img/sprint.png') no-repeat 0px -114px;
+            margin: 20px 0px 0px -2px;
+        }
+
+        .tubiao .tubiaoA a {
+            width: 203px;
+            height: 49px;
+            display: inline-block;
+        }
+
+        .tubiao .tubiaoB {
+            width: 190px;
+            height: 49px;
+            float: left;
+            overflow: hidden;
+            background: url('img/sprint.png') no-repeat 2px -169px;
+            margin: -49px 0px 0px 212px;
+        }
+
+        .tubiao .tubiaoB a {
+            width: 190px;
+            height: 49px;
+            display: inline-block;
+        }
+
+        .content {
+            width: 100%;
+            height: 1111px;
+            overflow: hidden;
+            background: url('img/sprint3.png') no-repeat;
+            margin: -100px 0px 0px 0px;
+        }
+
+        .contentHard {
+            width: 990px;
+            margin: auto;
+            overflow: hidden;
+            padding: 50px 0 0 0px;
+        }
+
+        .content .contentHard .contentHardBoxOne {
+            width: 468px;
+            height: 85px;
+            margin: 10px 245px;
+        }
+
+        .content .contentHard .contentHardBoxTwe {
+            width: 990px;
+            height: 318px;
+            float: left;
+            overflow: hidden;
+            margin: auto;
+            border-bottom: 2px solid #bcbbbb;
+        }
+
+        .contentTwo {
+            width: 990px;
+            height: 380px;
+            float: left;
+            border-bottom: 2px solid #b1b0b0;
+        }
+
+        .contentTwo ul li {
+            width: 240px;
+            height: 342px;
+            float: left;
+            overflow: hidden;
+            margin: 30px 0px;
+        }
+
+        .contentThree {
+            width: 990px;
+            height: 130px;
+            margin: auto;
+            float: left;
+            overflow: hidden;
+            border-bottom: 1px solid #bcbbbb;
+        }
+
+        .contentFour {
+            width: 990px;
+            height: 90px;
+            margin: auto;
+            float: left;
+            overflow: hidden;
+            border-bottom: 1px solid #c4c4c4;
+        }
+
+        .contentFour ul li {
+            width: 157px;
+            height: 64px;
+            float: left;
+            overflow: hidden;
+            margin: 13px 4px;
+        }
+
+        .Icon-one a {
+            width: 154px;
+            height: 54px;
+            display: inline-block;
+        }
+
+        .Icon-two a {
+            width: 154px;
+            height: 54px;
+            display: inline-block;
+        }
+
+        .Icon-three a {
+            width: 154px;
+            height: 54px;
+            display: inline-block;
+        }
+
+        .Icon-four a {
+            width: 154px;
+            height: 54px;
+            display: inline-block;
+        }
+
+        .Icon-five a {
+            width: 154px;
+            height: 54px;
+            display: inline-block;
+        }
+
+        .Icon-six a {
+            width: 154px;
+            height: 54px;
+            display: inline-block;
+        }
+
+        .contentTwo ul li .BoxOne {
+            width: 221px;
+            height: 139px;
+            float: left;
+            background: url(img/tu5.png) no-repeat -4px -100px;
+            margin: 10px 10px;
+        }
+
+        .contentTwo ul li .BoxTwo {
+            width: 221px;
+            height: 139px;
+            float: left;
+            background: url(img/tu5.png) no-repeat -4px -258px;
+            margin: 10px 10px;
+        }
+
+        .contentTwo ul li .BoxFox {
+            width: 221px;
+            height: 139px;
+            float: left;
+            background: url(img/tu5.png) no-repeat -4px -413px;
+            margin: 10px 10px;
+        }
+
+        .BoxOne a {
+            width: 221px;
+            height: 139px;
+            display: inline-block;
+        }
+
+        .BoxTwo a {
+            width: 221px;
+            height: 139px;
+            display: inline-block;
+        }
+
+        .BoxFox a {
+            width: 221px;
+            height: 139px;
+            display: inline-block;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 443px;
+            background: url('img/tu33.jpg') repeat-x;
+            overflow: hidden;
+        }
+
+        .bottom-One {
+            width: 990px;
+            height: 374px;
+            margin:auto;
+            overflow: hidden;
+        }
+
+        .bottom-One ul li {
+            width: 247px;
+            height: 374px;
+            float: left;
+            overflow: hidden;
+            margin: 0px 0px;
+        }
+
+        .bottomBox-one {
+            width: 226px;
+            height: 33px;
+            background: url('img/tu11.png') no-repeat;
+            margin: 11px 9px;
+        }
+
+        .bottomBox-two {
+            width: 226px;
+            height: 36px;
+            background: url('img/tu11.png') no-repeat 0px 1px;
+            margin: 10px 9px;
+        }
+
+        .bottomBox-three {
+            width: 226px;
+            height: 91px;
+            background: url('img/tu11.png') no-repeat 0px -93px;
+            margin: 14px 9px;
+        }
+
+        .bottomBox-four {
+            width: 67px;
+            height: 31px;
+            background: url('img/tu11.png')no-repeat 0px -197px;
+            margin: -4px 11px;
+        }
+
+        .bottom-Two {
+            width: 100%;
+            height: 162px;
+            float: left;
+            overflow: hidden;
+            background: url('img/tu34.jpg') repeat-x;
+            margin: 6px 0px;
+        }
+
+        .bottomTwoBox-one {
+            width: 245px;
+            height: 56px;
+            display: inline-block;
+            overflow: hidden;
+           padding: 2px 2px;
+        }
+
+        .bottomTwoBox-two {
+            width: 480px;
+            height: 56px;
+            display: inline-block;
+            overflow: hidden;
+            padding: 0px 0px;
+        }
+
+        .bottomTwoBox-two ul li {
+            font-size: 13px;
+            color: #fff;
+            line-height: 57px;
+            float: left;
+            overflow: hidden;
+            padding: 0px 13px;
+        }
+
+        .bottomTwoBox-three {
+            width: 147px;
+            height: 56px;
+            overflow: hidden;
+            display: inline-block;
+            background: url('img/tu12.png') no-repeat 7px 12px;
+        }
+
+        .bottomTwoBox-four {
+            width: 99px;
+            height: 57px;
+            display: inline-block;
+            overflow: hidden;
+            background: url('img/tu12.png') no-repeat -142px 12px;
+        }
+
+        .bottomTwoBox-four a {
+            width: 55px;
+            height: 29px;
+            display: inline-block;
+        }
+
+        .bottomTwoBox {
+            width: 990px;
+            height: 60px;
+            overflow: hidden;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="headerContent">
+            <div class="logo"><a href="web.html">logo</a></div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        Portfolio
+                    </li>
+                    <li>
+                        Dorps
+                    </li>
+                    <li>
+                        Full Width
+                    </li>
+                    <li>
+                        Archives
+                    </li>
+                    <li>
+                        Blog
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="logofooter"></div>
+                <div class="logofooter1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerTwo">
+        <div class="headerTwoContent">
+            <div class="tubiao">
+                <p class="word">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <div class="tubiaoA"><a href="web.html"></a></div>
+                <div class="tubiaoB"><a href="web.html"></a></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="contentHard">
+            <div class="contentHardBoxOne">
+                <p class="wordOne">Why you’ll love Applica.</p>
+                <p class="wordTwo">Easy to modify and customize. Perfect template to present your product</p>
+            </div>
+            <div class="contentHardBoxTwe">
+                <div class="menuOne">
+                    <ul>
+                        <li>
+                            <div class="liBox"><a href="http://baidu.com"></a></div>
+                            <div class="liBox-one">
+                                <p class="word1">Ut enim ad minim veniam</p>
+                                <p class="word2">Sed ut perspiciatis unde omnis iste natus errordo eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                                <p class="word3">Ut enim ad minim.</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="liBoxOne"><a href="http://baidu.com"></a></div>
+                            <div class="liBoxOne-one">
+                                <p class="word4">Consectetur adipisicing</p>
+                                <p class="word5">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="liBoxTwo"><a href="http://baidu.com"></a></div>
+                            <div class="liBoxTwo-one">
+                                <p class="word6">Dolore magna aliqua</p>
+                                <p class="word7">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam</p>
+                                <p class="word8"><a href="http:www.sohu.com">quis nostrud.</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="liBoxFax"><a href="http://baidu.com"></a></div>
+                            <div class="liBoxFax-one">
+                                <p class="word9">Tempor incididunt ut labore et</p>
+                                <p class="word10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contentTwo">
+                <ul>
+                    <li>
+                        <div class="Box">
+                            <p class="word11">Latest Projects </p>
+                            <p class="word12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p class="word13">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                nisi ut aliquip ex ea commodo consequat. </p>
+                            <div class="word13-one"><a href="http://baidu.com"></a></div>
+                            <div class="wordBox"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="BoxOne"><a href="http://baidu.com"></a>
+                            <div class="BoxOne-one">
+                                <p class="word14">Ut enim ad minim veniam: quis nostrud exercitation</p>
+                                <p class="word15">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue.
+                                    Nullam id dolor id nibh ultricies vehicula …</p>
+                                <p class="word16">January 22, 2011 · 11 Comments</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="BoxTwo"><a href="http://sohu.com"> </a>
+                            <div class="BoxTwo-one">
+                                <p class="word17">Sed ut perspiciatis unde omnis iste natus</p>
+                                <p class="word18">Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                                    corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                                <p class="word19">20, 2011 · 5 Comments</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="BoxFox"><a href="http://sohu.com"></a>
+                            <div class="BoxFox-one">
+                                <p class="word20">Neque porro quisquam est, qui dolorem ipsum quia dolor</p>
+                                <p class="word21">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    eiusmod tempor incididunt…</p>
+                                <p class="word22">January 22, 2011 · 11 Comments</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="contentThree">
+                <p class="word23">Some sample logos of clients</p>
+                <p class="word24">Easy to modify and customize. Perfect template to present your product</p>
+            </div>
+            <div class="contentFour">
+                <ul>
+                    <li>
+                        <div class="Icon-one"><a href="http://www.china.com"></a></div>
+                    </li>
+                    <li>
+                        <div class="Icon-two"><a href="http://www.qq.com"></a></div>
+                    </li>
+                    <li>
+                        <div class="Icon-three"><a href="http://www.sina.com.cn"></a></div>
+                    </li>
+                    <li>
+                        <div class="Icon-four"><a href="http://www.baidu.com"></a></div>
+                    </li>
+                    <li>
+                        <div class="Icon-five"><a href="https://www.ifeng.com/"></a></div>
+                    </li>
+                    <li>
+                        <div class="Icon-six"><a href="http://www.google.cn"></a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <div class="bottom-One">
+            <ul>
+                <li>
+                    <p class="word25">About Applica</p>
+                    <p class="word26">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id
+                        nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus.</p>
+                    <p class="word27">Posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor
+                        ligula, eget lacinia odio sem nec elit.</p>
+                    <p class="word28">Applica.</p>
+                    <p class="word29">Applica, LA.</p>
+                    <p class="word30">t: (888) 132-4567</p>
+                    <p class="word31">e: contact@mail.com</p>
+                </li>
+                <li>
+                    <p class="word32">From Blog</p>
+                    <p class="word33">Pixeden is launching its new premium files offering </p>
+                    <p class="word34">The top 5 best free font October 2011</p>
+                    <p class="word35">The top 5 best jquery slider plugins for your website</p>
+                    <p class="word36">How to make a soda can photoshop mockup tutorial</p>
+                    <p class="word37">The top 5 quality best free stock photography website for designers</p>
+                </li>
+                <li>
+                    <p class="word38">Latest Tweets</p>
+                    <p class="word39">@Pixeden iPhone 4s Psd Landscape Mockup http://t.co/1XHKCpwZ
+                        about 4 hours ago</p>
+                    <p class="word40">@Pixeden, Pixeden is launching its new premium files offering
+                        http://t.co/1XHKCpwZ
+                        about 8 hours ago</p>
+                    <p class="word41">
+                        @Pixeden How to make a soda can photoshop mockup tutorial
+                        http://t.co/1XHKCpwZ
+                        about 8 hours ago</p>
+                </li>
+                <li>
+                    <p class="word42">Contact Us</p>
+                    <p class="word43">Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat</p>
+                    <div class="bottomBox-one"></div>
+                    <div class="bottomBox-two"></div>
+                    <div class="bottomBox-three"></div>
+                    <div class="bottomBox-four"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom-Two">
+            <div class="bottomTwoBox">
+                <div class="bottomTwoBox-one">
+                    <p class="word44">© Copyright 2012 Applica / Powered by Photoshop
+                        PSD Template by Pixeden</p>
+                </div>
+                <div class="bottomTwoBox-two">
+                    <ul>
+                        <li>
+                            Home
+                        </li>
+                        <li>
+                            Portfolio
+                        </li>
+                        <li>
+                            Dorps
+                        </li>
+                        <li>
+                            Full Width
+                        </li>
+                        <li>
+                            Archives
+                        </li>
+                        <li>
+                            Blog
+                        </li>
+                        <li>
+                            Contact
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottomTwoBox-three"></div>
+                <div class="bottomTwoBox-four"><a href="web.html"></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

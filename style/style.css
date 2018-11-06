@@ -1,0 +1,22 @@
+*{
+  margin:0;
+  padding:0;
+}
+ul li{
+  list-style: none;
+}
+#div4{   
+      width:400px;
+      height:2000px;
+      background: rgb(78, 97, 92);
+      background-image: url(img/zzz.jpg);
+      background-repeat: no-repeat;
+      background-position:top left;
+    }
+header{
+  width: 100%;
+  height:42px;
+  background: rgb(78, 97, 92);
+  color: #fff;
+
+}
